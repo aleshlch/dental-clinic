@@ -1,0 +1,50 @@
+@import '../App/mixins';
+@import '../App/vars';
+
+
+.services-wrapper {
+  background-color: $beige;
+  padding: 2em 0 0 0;
+}
+
+.services__title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+
+  &::after {
+      @include line(auto, $line-pos, $darkgreen)
+  }
+}
+
+
+.services__gallery {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  position: relative;
+}
+
+.services__gallery-wrapper {
+    position: absolute;
+    min-height: 100vh;
+    left: 10%;
+    top: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services__info-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  position: relative;
+}
+
